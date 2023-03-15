@@ -112,7 +112,7 @@ module.exports = {
                     boxShadow: theme(`boxShadow.${themeStyle.buttonPrimary?.shadow}`),
                     fontWeight: themeStyle.buttonPrimary?.weight,
                     letterSpacing: theme(`letterSpacing.${themeStyle.buttonPrimary?.letterSpacing}`),
-                    padding: `${themeStyle.buttonPrimary.verticalPadding}px ${themeStyle.buttonPrimary?.horizontalPadding}px`,
+                    padding: `${themeStyle.buttonPrimary?.verticalPadding}px ${themeStyle.buttonPrimary?.horizontalPadding}px`,
                     textTransform: themeStyle.buttonPrimary?.case
                 },
                 '.sb-component-button-secondary': {
