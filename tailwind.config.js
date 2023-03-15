@@ -90,7 +90,7 @@ module.exports = {
                     textTransform: themeStyle.h4.case
                 },
                 h5: {
-                    fontSize: theme(`fontSize.${themeStyle.h5.size}`),
+                    fontSize: theme(`fontSize.${themeStyle.h5?.size}`),
                     fontWeight: theme(`fontWeight.${themeStyle.h5.weight}`),
                     letterSpacing: theme(`letterSpacing.${themeStyle.h5.letterSpacing}`),
                     textDecoration: themeStyle.h5.decoration,
