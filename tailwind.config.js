@@ -70,10 +70,10 @@ module.exports = {
                 },
                 'h2,.h2': {
                     fontSize: theme(`fontSize.${themeStyle.h2?.size}`),
-                    fontWeight: theme(`fontWeight.${themeStyle.h2.weight}`),
-                    letterSpacing: theme(`letterSpacing.${themeStyle.h2.letterSpacing}`),
-                    textDecoration: themeStyle.h2.decoration,
-                    textTransform: themeStyle.h2.case
+                    fontWeight: theme(`fontWeight.${themeStyle.h2?.weight}`),
+                    letterSpacing: theme(`letterSpacing.${themeStyle.h2?.letterSpacing}`),
+                    textDecoration: themeStyle.h2?.decoration,
+                    textTransform: themeStyle.h2?.case
                 },
                 'h3,.h3': {
                     fontSize: theme(`fontSize.${themeStyle.h3?.size}`),
