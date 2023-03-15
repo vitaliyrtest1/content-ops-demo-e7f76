@@ -63,10 +63,10 @@ module.exports = {
                 },
                 'h1,.h1': {
                     fontSize: theme(`fontSize.${themeStyle.h1?.size}`),
-                    fontWeight: theme(`fontWeight.${themeStyle.h1.weight}`),
-                    letterSpacing: theme(`letterSpacing.${themeStyle.h1.letterSpacing}`),
-                    textDecoration: themeStyle.h1.decoration,
-                    textTransform: themeStyle.h1.case
+                    fontWeight: theme(`fontWeight.${themeStyle.h1?.weight}`),
+                    letterSpacing: theme(`letterSpacing.${themeStyle.h1?.letterSpacing}`),
+                    textDecoration: themeStyle.h1?.decoration,
+                    textTransform: themeStyle.h1?.case
                 },
                 'h2,.h2': {
                     fontSize: theme(`fontSize.${themeStyle.h2?.size}`),
