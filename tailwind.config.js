@@ -77,7 +77,7 @@ module.exports = {
                 },
                 'h3,.h3': {
                     fontSize: theme(`fontSize.${themeStyle.h3?.size}`),
-                    fontWeight: theme(`fontWeight.${themeStyle.h3.weight}`),
+                    fontWeight: theme(`fontWeight.${themeStyle.h3?.weight}`),
                     letterSpacing: theme(`letterSpacing.${themeStyle.h3.letterSpacing}`),
                     textDecoration: themeStyle.h3.decoration,
                     textTransform: themeStyle.h3.case
