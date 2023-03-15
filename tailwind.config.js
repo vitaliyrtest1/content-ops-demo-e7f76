@@ -62,7 +62,7 @@ module.exports = {
                     fontFamily: theme(`fontFamily.${themeStyle.fontHeadlines}`)
                 },
                 'h1,.h1': {
-                    fontSize: theme(`fontSize.${themeStyle.h1.size}`),
+                    fontSize: theme(`fontSize.${themeStyle.h1?.size}`),
                     fontWeight: theme(`fontWeight.${themeStyle.h1.weight}`),
                     letterSpacing: theme(`letterSpacing.${themeStyle.h1.letterSpacing}`),
                     textDecoration: themeStyle.h1.decoration,
