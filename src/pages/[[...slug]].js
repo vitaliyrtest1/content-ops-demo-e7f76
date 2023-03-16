@@ -33,4 +33,4 @@ export async function getStaticProps({ params }) {
 }
 
 const withHotContentReload = hotContentReload();
-export default usingSourcebit ? withHotContentReload(Page) : Page;
+export default /*usingSourcebit ? withHotContentReload(Page) : */Page;
