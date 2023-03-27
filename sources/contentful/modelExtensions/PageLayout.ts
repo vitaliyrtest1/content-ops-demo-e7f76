@@ -12,6 +12,10 @@ export const PageLayout: ModelExtension = {
     ],
     fields: [
         { name: 'isDraft', group: 'settings' },
-        { name: 'seo', group: 'seo' }
+        { name: 'seo', group: 'seo' },
+        {
+            name: 'sections',
+            readOnly: true
+        }
     ]
 };
