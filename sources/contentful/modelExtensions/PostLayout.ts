@@ -14,8 +14,7 @@ export const PostLayout: ModelExtension = {
     ],
     fields: [
         {
-            name: 'author',
-            readOnly: true
+            name: 'author'
         },
         { name: 'featuredImage', group: 'thumbnail' },
         { name: 'excerpt', group: 'thumbnail' },
