@@ -13,6 +13,10 @@ export const PostLayout: ModelExtension = {
         { name: 'seo', label: 'SEO', icon: 'page' }
     ],
     fields: [
+        {
+            name: 'author',
+            readOnly: true
+        },
         { name: 'featuredImage', group: 'thumbnail' },
         { name: 'excerpt', group: 'thumbnail' },
         {
