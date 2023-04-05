@@ -24,6 +24,10 @@ export const ImageBlock: ModelExtension = {
                     borderRadius: '*'
                 }
             }
+        },
+        {
+            name: 'image',
+            source: 'cloudinary'
         }
     ]
 };
