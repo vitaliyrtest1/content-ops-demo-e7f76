@@ -2,6 +2,7 @@ import { ModelExtension } from '@stackbit/types';
 
 export const Link: ModelExtension = {
     name: 'Link',
+    singleInstance: true,
     fieldGroups: [
         { name: 'styles', label: 'Styles', icon: 'palette' },
         { name: 'settings', label: 'Settings', icon: 'gear' }
