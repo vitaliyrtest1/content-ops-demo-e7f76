@@ -3,6 +3,7 @@ import { ModelExtension } from '@stackbit/types';
 export const Button: ModelExtension = {
     name: 'Button',
     label: 'Button',
+    singleInstance: true,
     fieldGroups: [
         { name: 'styles', label: 'Styles', icon: 'palette' },
         { name: 'settings', label: 'Settings', icon: 'gear' }
