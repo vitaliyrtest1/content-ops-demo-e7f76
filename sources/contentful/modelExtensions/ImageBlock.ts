@@ -28,6 +28,10 @@ export const ImageBlock: ModelExtension = {
         {
             name: 'url',
             source: 'cloudinary'
+        },
+        {
+            name: 'cloudinaryImage',
+            source: 'cloudinary'
         }
     ]
 };
