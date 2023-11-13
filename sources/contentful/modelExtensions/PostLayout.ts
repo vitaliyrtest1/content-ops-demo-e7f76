@@ -17,6 +17,23 @@ export const PostLayout: ModelExtension = {
             name: 'author'
         },
         { name: 'featuredImage', group: 'thumbnail' },
+        {
+            name: 'title',
+            type: 'string',
+            actions: [
+                {
+                    name: 'doc_action_2',
+                    label: 'Doc Action Succcess Long',
+                    run: async (options) => {
+                        await new Promise((resolve) => setTimeout(resolve, 1000));
+                        return {
+                            state: 'enabled',
+                            success: `Yes ${options.fieldPath.join('.')}`
+                        };
+                    }
+                },
+            ]
+        },
         { name: 'excerpt', group: 'thumbnail' },
         {
             name: 'colors',
