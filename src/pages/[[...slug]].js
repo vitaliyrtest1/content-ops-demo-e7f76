@@ -21,14 +21,12 @@ function Page(props) {
 
 export async function getStaticPaths() {
     const data = await getContent();
-    console.log(data)
     const paths = resolveStaticPaths(data);
     return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
     const data = await getContent();
-    console.log(data)
     const urlPath = '/' + (params.slug || []).join('/');
     const props = await resolveStaticProps(urlPath, data);
     return { props };

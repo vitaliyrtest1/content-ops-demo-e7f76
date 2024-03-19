@@ -1,8 +1,6 @@
 const plugin = require('tailwindcss/plugin');
 const themeStyle = require('./content/data/style.json');
 
-console.log(themeStyle); // todo remove
-
 module.exports = {
     content: ['./src/**/*.{js,ts,jsx,tsx}', './content/**/*', './.sourcebit-nextjs-cache.json'],
     safelist: [
