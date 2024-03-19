@@ -34,6 +34,23 @@ export const PostLayout: ModelExtension = {
                 },
             ]
         },
+        {
+            name: 'slug',
+            type: 'slug',
+            actions: [
+                {
+                    name: 'doc_action_3',
+                    label: 'Sluig action',
+                    run: async (options) => {
+                        await new Promise((resolve) => setTimeout(resolve, 1000));
+                        return {
+                            state: 'enabled',
+                            success: `Yes ${options.fieldPath.join('.')}`
+                        };
+                    }
+                },
+            ]
+        },
         { name: 'excerpt', group: 'thumbnail' },
         {
             name: 'colors',

@@ -36,7 +36,7 @@
     "devDependencies": {
         "@base2/pretty-print-object": "^1.0.2",
         "@netlify/plugin-nextjs": "^4.29.3",
-        "@stackbit/cms-contentful": "^0.0.54",
+        "@stackbit/cms-contentful": "^0.4.30",
         "@stackbit/types": "^0.10.13",
         "@types/glob": "^8.0.0",
         "@types/gtag.js": "^0.0.12",

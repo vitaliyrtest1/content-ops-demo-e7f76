@@ -1,8 +1,30 @@
-import { defineStackbitConfig } from '@stackbit/types';
+import { defineStackbitConfig, DocumentVersion, DocumentVersionWithDocument } from '@stackbit/types';
 import { ContentfulContentSource } from '@stackbit/cms-contentful';
 import { allModelExtensions } from './sources/contentful/modelExtensions';
 
-const contentfulSource = new ContentfulContentSource({
+class CustomContentfulContentSource extends ContentfulContentSource {
+    async getDocumentVersions({ documentId }: { documentId: string; }): Promise<{ versions: DocumentVersion[]; }> {
+        const result = await super.getDocumentVersions({ documentId });
+        return {
+            versions: result.versions.map((version) => ({
+                ...version,
+                label: `Custom ${version.createdAt}`
+            }))
+        };
+    }
+
+    async getDocumentForVersion({ documentId, versionId }: { documentId: string; versionId: string; }): Promise<{ version: DocumentVersionWithDocument; }> {
+        const result = await super.getDocumentForVersion({ documentId, versionId });
+        return {
+            version: {
+                ...result.version,
+                label: `Custom ${result.version.createdAt}`
+            }
+        };
+    }
+}
+
+const contentfulSource = new CustomContentfulContentSource({
     spaceId: process.env.CONTENTFUL_SPACE_ID,
     environment: process.env.CONTENTFUL_ENVIRONMENT || 'master',
     previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN,
